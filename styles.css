@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Custom;
-  src: url(Raleway-VariableFont_wght.ttf);
-}
-
 :root {
   --NavColor1: #cbcbcb;
   --FontColor1: #142049;
@@ -12,7 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Custom";
+  font-family: "Raleway", sans-serif;
 }
 
 /*Inicio nav bar*/
