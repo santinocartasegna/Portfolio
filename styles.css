@@ -1,0 +1,234 @@
+@font-face {
+  font-family: Custom;
+  src: url(Raleway-VariableFont_wght.ttf);
+}
+
+:root {
+  --NavColor1: #cbcbcb;
+  --FontColor1: #142049;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Custom";
+}
+
+/*Inicio nav bar*/
+
+#navbar {
+  width: 100%;
+  background-color: var(--NavColor1);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 20px 0;
+  font-size: 20px;
+  padding-right: 70px;
+  padding-top: 20.5px;
+}
+
+#navbar ul li {
+  margin-left: 70px;
+  transition: border-bottom-color 0.3s ease, transform 0.3s ease;
+  border-bottom: 0.5px solid transparent;
+  font-weight: 600;
+  color: var(--FontColor1);
+}
+
+#navbar ul li:hover {
+  border-bottom: 0.5px solid var(--FontColor1);
+  transform: scale(1.1);
+  scroll-behavior: smooth;
+}
+
+/*Final nav bar*/
+
+/*Inicio welcome section*/
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--FontColor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35px;
+  color: #cbcbcb;
+}
+
+.welcome-section-div p {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Final welcome section*/
+
+/*Inicio projects*/
+#projects {
+  width: 100%;
+  background-color: #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.grid {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#projects h2 {
+  margin: 70px 0;
+  color: var(--FontColor1);
+  border-bottom: 1px solid var(--FontColor1);
+  font-size: 30px;
+}
+
+.grid-divs img {
+  width: 320px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.grid-divs {
+  background-color: var(--FontColor1);
+  border: 1px solid var(--FontColor1);
+  box-shadow: 0 0 5px var(--FontColor1);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.grid-divs p {
+  padding: 10px 0;
+  font-size: 25px;
+  color: var(--NavColor1);
+  padding-bottom: 15px;
+}
+
+.grid-divs:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 439px) {
+  .grid {
+    justify-content: center;
+  }
+  #projects h2 {
+    text-align: center;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 673px) {
+  .grid {
+    justify-content: center;
+  }
+  .contact-container {
+    justify-content: center;
+  }
+}
+
+/*Final Projects*/
+
+/*Inicio Contact*/
+#contact {
+  width: 100%;
+  background-color: var(--FontColor1);
+  color: var(--NavColor1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+#contact h2 {
+  font-size: 50px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.contact-container a {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contact-container a:hover {
+  transform: translateY(5px);
+}
+
+.contact-container p {
+  margin-left: 5px;
+}
+
+.contact-container i {
+  margin-top: 3px;
+}
+.div-intermedio {
+  text-align: center;
+}
+
+@media screen and (max-width: 439px) {
+  .contact-container {
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Fin contact*/
+
+/*inicio footer*/
+footer {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #090e20;
+  color: var(--NavColor1);
+}
+
+footer div {
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 439px) {
+  footer {
+    padding-bottom: 50px;
+  }
+  footer div {
+    margin-right: 1rem;
+  }
+}
